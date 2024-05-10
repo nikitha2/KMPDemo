@@ -57,6 +57,7 @@ kotlin {
             implementation(libs.androidx.activity.compose)
 //            implementation("androidx.annotation:annotation:1.7.1")
             implementation(libs.androidx.annotation)
+            implementation("androidx.navigation:navigation-compose:2.7.7")
         }
         commonMain.dependencies {
             implementation(compose.runtime)
@@ -106,6 +107,10 @@ android {
     dependencies {
         debugImplementation(libs.compose.ui.tooling)
     }
+}
+dependencies {
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.mediation.test.suite)
 }
 
 compose.desktop {
